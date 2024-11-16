@@ -2158,7 +2158,11 @@ input, select, textarea {
 			-ms-object-position: 25% 75%;
 			object-position: 25% 75%;
 		}
-
+		.image[data-position="fit"] img {
+			width: 100%; /* or any custom size */
+			height: 100%; 
+			object-fit: contain;
+		}
 		.image img {
 			border-radius: 5px;
 			display: block;
@@ -2207,7 +2211,10 @@ input, select, textarea {
 			.image.main img {
 				border-radius: 0;
 			}
-
+			.imageContainer > img:hover {
+				width: 100%;
+				height: 100%;
+			  }
 /* List */
 
 	ol {
